@@ -13,6 +13,8 @@ export const runTool = async(
     toolArgs: JSON.parse(toolCall.function.arguments || '{}')
   }
 
+  console.log('running tool');
+
   switch (toolCall.function.name) {
     case 'get_weather':
       return getWeather();
