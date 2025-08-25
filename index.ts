@@ -20,5 +20,3 @@ const response = await runAgent({
 	userMessage,
   tools: [weatherTool]
 })
-
-// console.log(response)
